@@ -127,6 +127,22 @@ h1 {
     --card-color: #ff8c42;
 }
 
+.type-viaggi {
+    --card-color: #6c5ce7;
+}
+
+.type-cuore {
+    --card-color: #fd79a8;
+}
+
+.type-mangiare {
+    --card-color: #fdcb6e;
+}
+
+.type-attività {
+    --card-color: #00b894;
+}
+
 .file-info {
     display: none;
 }
