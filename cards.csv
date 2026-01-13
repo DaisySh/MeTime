@@ -14,12 +14,12 @@ Viaggi;Mare 7gg;Organizzare una settimana al mare, dedicata a riposo, esplorazio
 Viaggi;Estero 7gg;Organizzare una settimana all'estero, curando itinerario, alloggi e attività.
 Mangiare;Colazione;Scoprire un nuovo posto per fare colazione, e iniziare la giornata con calma.
 Mangiare;Brunch;Dormire un po' di più, e concedersi un brunch in un locale nuovo.
-Mangiare;Aperitivo;Uscire per un aperitivo dalle 18 in poi, e rilassarsi a fine giornata.
+Mangiare;Aperitivo;Uscire per un aperitivo dalle 17:30 in poi, e rilassarsi a fine giornata.
 Mangiare;Street food;Concedersi una pausa veloce ma gustosa, con del buon cibo di strada.
-Mangiare;Pranzo Cena;Andare nel proprio ristorante preferito, e godersi il pasto senza fretta.
+Mangiare;Pranzo/Cena;Andare nel proprio ristorante preferito, e godersi il pasto senza fretta.
 Mangiare;Esotico;Scegliere un ristorante di cucina estera, e provare nuovi sapori.
 Cuore;Pausa chiacchiere;Organizzare un incontro con una persona cara, per chiacchierare con calma.
-Cuore;Lettera Cartolina;Scrivere una lettera o una cartolina, e spedirla a qualcuno/a.
+Cuore;Lettera/Cartolina;Scrivere una lettera o una cartolina, e spedirla a qualcuno/a.
 Cuore;Diario;Scrivere alcune pagine di diario, su un momento recente che ha dato soddisfazione.
 Cuore;Diario;Scrivere alcune pagine di diario, su un momento difficile, riflettendo su emozioni e cambiamenti.
 Cuore;Serata;Organizzare una serata insieme ad amici o familiari.
@@ -30,7 +30,7 @@ Cuore;Playlist;Creare una playlist per divertirsi, e migliorare l'umore.
 Cuore;Visita;Andare a trovare una persona cara, o qualcuno/a conosciuto/a da poco.
 Cuore;Visita;Invitare una persona a casa, e condividere del tempo insieme.
 Cuore;Regalo;Fare o farsi un regalo, come gesto di cura.
-Cuore;Foto;Creare un album dei ricordi, e stamparlo se lo si desidera.
+Cuore;Fotografia;Creare un album dei ricordi, e stamparlo se lo si desidera.
 Cuore;Telefono;Scrivere o chiamare una persona, che non si sente da tempo.
 Attività;Cultura;Visitare una mostra in un museo.
 Attività;Cultura;Assistere a uno spettacolo teatrale.
@@ -40,14 +40,14 @@ Attività;Cultura;Partecipare a un concerto.
 Attività;Hobby;Dedicarsi alla pittura o al disegno, in un centro ricreativo.
 Attività;Hobby;Andare a ballare, e muovere il corpo.
 Attività;Hobby;Giocare a scacchi, dama, burraco o carte, in un centro ricreativo.
-Attività;Foto;Dedicare del tempo a fare fotografie, in ambienti interni o all'aperto.
+Attività;Fotografia;Dedicare del tempo a fare fotografie, in ambienti interni o all'aperto.
 Attività;Volontariato;Dedicare il proprio tempo, a un'attività socialmente utile.
 Attività;Hobby;Leggere alcuni capitoli di un libro.
 Attività;Cucina;Fare la spesa, e cucinare il proprio piatto preferito.
 Attività;Cucina;Scegliere una ricetta di un altro paese, e provare a cucinarla.
 Attività;Relax;Concedersi un massaggio, per rilassarsi.
-Attività;Cosmetica;Sistemare le unghie, in un centro specializzato.
-Attività;Cosmetica;Fare o farsi fare la piega ai capelli.
+Attività;Cura della persona;Sistemare le unghie, in un centro specializzato.
+Attività;Cura della persona;Fare o farsi fare la piega ai capelli.
 Attività;Verde;Fare una passeggiata nella natura, ascoltando musica.
 Attività;Hobby;Prendere in prestito un libro, in biblioteca.
 Attività;Relax;Riordinare casa, o una zona specifica come stanza, scrivania o armadio.
