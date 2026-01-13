@@ -1,0 +1,54 @@
+tipo,titolo,descrizione
+Viaggi, Citta' 1g, Pianifica una viaggio di un giorno con un budget massimo di 50 euro.
+Viaggi, Mare 1g, Pianifica una viaggio di un giorno con un budget massimo di 50 euro.
+Viaggi, Città 1g, Pianifica una viaggio di un giorno con un budget massimo di 100 euro.
+Viaggi, Mare 1g, Pianifica una viaggio di un giorno con un budget massimo di 100 euro.
+Viaggi, Terme 1g, Pianifica una gita alle terme con un budget massimo di 50 euro.
+Viaggi, Terme 1g, Pianifica una gita alle terme con un budget massimo di 100 euro.
+Viaggi, Città 3gg, Pianifica una viaggio di tre giorni.
+Viaggi, Mare 3gg, Pianifica una viaggio di tre giorni.
+Viaggi, Estero 3gg, Pianifica una viaggio di tre giorni all'estero.
+Viaggi, Montagna 3gg, Pianifica una viaggio di tre giorni.
+Viaggi, Città 7gg, Pianifica una viaggio di una settimana.
+Viaggi, Mare 7gg, Pianifica una viaggio di una settimana.
+Viaggi, Estero 7gg, Pianifica una viaggio di di una settimana all'estero.
+Mangiare, Colazione, Vai a fare colazione in un posto nuovo.
+Mangiare, Brunch, Oggi dormi di più e provi un posto da brunch.
+Mangiare, Aperitivo, Vai a fare aperitivo dalle 18:00 in poi.
+Mangiare, Street food, Per una pausa veloce ma gustosa.
+Mangiare, Pranzo/Cena, Vai nel tuo ristorante preferito.
+Mangiare, Esotico, Vai a pranzo o a cena in un ristorante con cucina estera.
+Cuore, Pausa chiacchiere, Fissa un aperitivo/tè/cioccolata con una persona cara per fare due chiacchiere.
+Cuore, Lettera/Cartolina, Scrivi una lettera/cartolina e spediscila.
+Cuore, Diario, Scrivi qualche pagina di diario a proposito di uno dei momenti che ti ha dato più soddisfazione negli ultimi tempi.
+Cuore, Diario, Scrivi qualche pagina di diario a proposito di un momento difficile. Concentrati sulle tue emozioni e cosa è stato superato e cosa no.
+Cuore, Serata, Organizza una serata con amici/famiglia.
+Cuore, Gita, Organizza una gita con delle persone care.
+Cuore, Classe, Vestiti in modo elegante e vai da qualche parte di adatto.
+Cuore, Playlist, Crea una playlist per i momenti difficili.
+Cuore, Playlist, Crea una playlist per divertirti.
+Cuore, Visita, Vai a trovare una persona cara o che hai conosciuto da poco.
+Cuore, Visita, Invita una persona a casa.
+Cuore, Regalo, Fai o fatti un regalo.
+Cuore, Foto, Fai un album dei ricordi (se vuoi stampalo pure).
+Cuore, Telefono, Manda un messaggio o chiama una persona che non senti da qualche tempo.
+Attività, Cultura, Vai a vedere una mostra in un museo.
+Attività, Cultura, Vai a vedere uno spettacolo a teatro.
+Attività, Cultura, Vai a vedere un film al cinema.
+Attività, Cultura, Vai ad ascoltare un musical.
+Attività, Cultura, Vai ad ascoltare un concerto.
+Attività, Hobby, Vai a dipingere/disegnare in un centro ricreativo.
+Attività, Hobby, Vai a ballare da qualche parte.
+Attività, Hobby, Vai a giocare a scacchi/dama/burraco/carte in un centro ricreativo.
+Attività, Foto, Passa la mattina o il pomeriggio a fare foto indoor o outdoor.
+Attività, Volontariato, Presta il tuo tempo per qualcosa di socialmente utile.
+Attività, Hobby, Leggi qualche capitolo di un libro.
+Attività, Cucina, Fai la spesa e cucina il tuo piatto preferito.
+Attività, Cucina, Trova una ricetta di un paese diverso dal tuo e prova a cucinarla.
+Attività, Relax, Fatti fare un massaggio.
+Attività, Cosmetica, Vai a farti sistemare le unghie in un centro specializzato.
+Attività, Cosmetica, Fai o fatti fare la piega ai capelli.
+Attività, Verde, Vai a fare una passeggiata nel verde con un po di musica.
+Attività, Hobby, Prendi in prestito un libro in biblioteca.
+Attività, Relax, Sistema casa o un'area (stanza - scrivania - armadio).
+Attività, Hobby, Crea qualcosa con le tue mani. Puzzle - Uncinetto - Calligrafia - Ceramica - Ferri - Perline per portachiavi.
