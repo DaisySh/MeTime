@@ -161,6 +161,7 @@
 
                 Papa.parse(csvText, {
                     header: true,
+                    delimiter: ';',
                     skipEmptyLines: true,
                     complete: function(results) {
                         allCards = results.data.filter(row => row.tipo && row.titolo && row.descrizione);
@@ -195,6 +196,7 @@
 
             Papa.parse(file, {
                 header: true,
+                delimiter: ';',
                 skipEmptyLines: true,
                 complete: function(results) {
                     allCards = results.data.filter(row => row.tipo && row.titolo && row.descrizione);
