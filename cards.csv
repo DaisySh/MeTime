@@ -1,54 +1,54 @@
-tipo,titolo,descrizione
-Viaggi, Citta' 1g, Pianifica una viaggio di un giorno con un budget massimo di 50 euro.
-Viaggi, Mare 1g, Pianifica una viaggio di un giorno con un budget massimo di 50 euro.
-Viaggi, Città 1g, Pianifica una viaggio di un giorno con un budget massimo di 100 euro.
-Viaggi, Mare 1g, Pianifica una viaggio di un giorno con un budget massimo di 100 euro.
-Viaggi, Terme 1g, Pianifica una gita alle terme con un budget massimo di 50 euro.
-Viaggi, Terme 1g, Pianifica una gita alle terme con un budget massimo di 100 euro.
-Viaggi, Città 3gg, Pianifica una viaggio di tre giorni.
-Viaggi, Mare 3gg, Pianifica una viaggio di tre giorni.
-Viaggi, Estero 3gg, Pianifica una viaggio di tre giorni all'estero.
-Viaggi, Montagna 3gg, Pianifica una viaggio di tre giorni.
-Viaggi, Città 7gg, Pianifica una viaggio di una settimana.
-Viaggi, Mare 7gg, Pianifica una viaggio di una settimana.
-Viaggi, Estero 7gg, Pianifica una viaggio di di una settimana all'estero.
-Mangiare, Colazione, Vai a fare colazione in un posto nuovo.
-Mangiare, Brunch, Oggi dormi di più e provi un posto da brunch.
-Mangiare, Aperitivo, Vai a fare aperitivo dalle 18:00 in poi.
-Mangiare, Street food, Per una pausa veloce ma gustosa.
-Mangiare, Pranzo/Cena, Vai nel tuo ristorante preferito.
-Mangiare, Esotico, Vai a pranzo o a cena in un ristorante con cucina estera.
-Cuore, Pausa chiacchiere, Fissa un aperitivo/tè/cioccolata con una persona cara per fare due chiacchiere.
-Cuore, Lettera/Cartolina, Scrivi una lettera/cartolina e spediscila.
-Cuore, Diario, Scrivi qualche pagina di diario a proposito di uno dei momenti che ti ha dato più soddisfazione negli ultimi tempi.
-Cuore, Diario, Scrivi qualche pagina di diario a proposito di un momento difficile. Concentrati sulle tue emozioni e cosa è stato superato e cosa no.
-Cuore, Serata, Organizza una serata con amici/famiglia.
-Cuore, Gita, Organizza una gita con delle persone care.
-Cuore, Classe, Vestiti in modo elegante e vai da qualche parte di adatto.
-Cuore, Playlist, Crea una playlist per i momenti difficili.
-Cuore, Playlist, Crea una playlist per divertirti.
-Cuore, Visita, Vai a trovare una persona cara o che hai conosciuto da poco.
-Cuore, Visita, Invita una persona a casa.
-Cuore, Regalo, Fai o fatti un regalo.
-Cuore, Foto, Fai un album dei ricordi (se vuoi stampalo pure).
-Cuore, Telefono, Manda un messaggio o chiama una persona che non senti da qualche tempo.
-Attività, Cultura, Vai a vedere una mostra in un museo.
-Attività, Cultura, Vai a vedere uno spettacolo a teatro.
-Attività, Cultura, Vai a vedere un film al cinema.
-Attività, Cultura, Vai ad ascoltare un musical.
-Attività, Cultura, Vai ad ascoltare un concerto.
-Attività, Hobby, Vai a dipingere/disegnare in un centro ricreativo.
-Attività, Hobby, Vai a ballare da qualche parte.
-Attività, Hobby, Vai a giocare a scacchi/dama/burraco/carte in un centro ricreativo.
-Attività, Foto, Passa la mattina o il pomeriggio a fare foto indoor o outdoor.
-Attività, Volontariato, Presta il tuo tempo per qualcosa di socialmente utile.
-Attività, Hobby, Leggi qualche capitolo di un libro.
-Attività, Cucina, Fai la spesa e cucina il tuo piatto preferito.
-Attività, Cucina, Trova una ricetta di un paese diverso dal tuo e prova a cucinarla.
-Attività, Relax, Fatti fare un massaggio.
-Attività, Cosmetica, Vai a farti sistemare le unghie in un centro specializzato.
-Attività, Cosmetica, Fai o fatti fare la piega ai capelli.
-Attività, Verde, Vai a fare una passeggiata nel verde con un po di musica.
-Attività, Hobby, Prendi in prestito un libro in biblioteca.
-Attività, Relax, Sistema casa o un'area (stanza - scrivania - armadio).
-Attività, Hobby, Crea qualcosa con le tue mani. Puzzle - Uncinetto - Calligrafia - Ceramica - Ferri - Perline per portachiavi.
+tipo;titolo;descrizione
+Viaggi;Città 1g;Organizzare una gita di un giorno in città, pianificando spostamenti, attività e pasti, con un budget massimo di 50 euro.
+Viaggi;Mare 1g;Organizzare una giornata al mare, curando viaggio, relax e pranzo, con un budget massimo di 50 euro.
+Viaggi;Città 1g;Organizzare una giornata intera in città, pianificando attrazioni, cibo e trasporti, con un budget massimo di 100 euro.
+Viaggi;Mare 1g;Organizzare una giornata al mare, pianificando ogni dettaglio, con un budget massimo di 100 euro.
+Viaggi;Terme 1g;Concedersi una giornata alle terme, scegliendo la struttura e gestendo le spese, entro 50 euro.
+Viaggi;Terme 1g;Concedersi una giornata di benessere alle terme, organizzando ingresso e spostamenti, con un budget massimo di 100 euro.
+Viaggi;Città 3gg;Organizzare un viaggio di tre giorni in città, pianificando alloggio, visite e tempo libero.
+Viaggi;Mare 3gg;Organizzare una vacanza di tre giorni al mare, dedicata a relax, passeggiate e buon cibo.
+Viaggi;Estero 3gg;Organizzare un viaggio di tre giorni all'estero, pianificando trasporti, alloggio e luoghi da visitare.
+Viaggi;Montagna 3gg;Organizzare una fuga di tre giorni in montagna, immersi nella natura e nell'aria aperta.
+Viaggi;Città 7gg;Organizzare una settimana in città, bilanciando cultura, relax e vita locale.
+Viaggi;Mare 7gg;Organizzare una settimana al mare, dedicata a riposo, esplorazione e piaceri semplici.
+Viaggi;Estero 7gg;Organizzare una settimana all'estero, curando itinerario, alloggi e attività.
+Mangiare;Colazione;Scoprire un nuovo posto per fare colazione, e iniziare la giornata con calma.
+Mangiare;Brunch;Dormire un po' di più, e concedersi un brunch in un locale nuovo.
+Mangiare;Aperitivo;Uscire per un aperitivo dalle 18 in poi, e rilassarsi a fine giornata.
+Mangiare;Street food;Concedersi una pausa veloce ma gustosa, con del buon cibo di strada.
+Mangiare;Pranzo Cena;Andare nel proprio ristorante preferito, e godersi il pasto senza fretta.
+Mangiare;Esotico;Scegliere un ristorante di cucina estera, e provare nuovi sapori.
+Cuore;Pausa chiacchiere;Organizzare un incontro con una persona cara, per chiacchierare con calma.
+Cuore;Lettera Cartolina;Scrivere una lettera o una cartolina, e spedirla a qualcuno/a.
+Cuore;Diario;Scrivere alcune pagine di diario, su un momento recente che ha dato soddisfazione.
+Cuore;Diario;Scrivere alcune pagine di diario, su un momento difficile, riflettendo su emozioni e cambiamenti.
+Cuore;Serata;Organizzare una serata insieme ad amici o familiari.
+Cuore;Gita;Organizzare una gita con persone a cui si vuole bene.
+Cuore;Classe;Vestirsi in modo elegante, e andare in un luogo adatto all'occasione.
+Cuore;Playlist;Creare una playlist da ascoltare nei momenti difficili.
+Cuore;Playlist;Creare una playlist per divertirsi, e migliorare l'umore.
+Cuore;Visita;Andare a trovare una persona cara, o qualcuno/a conosciuto/a da poco.
+Cuore;Visita;Invitare una persona a casa, e condividere del tempo insieme.
+Cuore;Regalo;Fare o farsi un regalo, come gesto di cura.
+Cuore;Foto;Creare un album dei ricordi, e stamparlo se lo si desidera.
+Cuore;Telefono;Scrivere o chiamare una persona, che non si sente da tempo.
+Attività;Cultura;Visitare una mostra in un museo.
+Attività;Cultura;Assistere a uno spettacolo teatrale.
+Attività;Cultura;Guardare un film al cinema.
+Attività;Cultura;Ascoltare un musical dal vivo.
+Attività;Cultura;Partecipare a un concerto.
+Attività;Hobby;Dedicarsi alla pittura o al disegno, in un centro ricreativo.
+Attività;Hobby;Andare a ballare, e muovere il corpo.
+Attività;Hobby;Giocare a scacchi, dama, burraco o carte, in un centro ricreativo.
+Attività;Foto;Dedicare del tempo a fare fotografie, in ambienti interni o all'aperto.
+Attività;Volontariato;Dedicare il proprio tempo, a un'attività socialmente utile.
+Attività;Hobby;Leggere alcuni capitoli di un libro.
+Attività;Cucina;Fare la spesa, e cucinare il proprio piatto preferito.
+Attività;Cucina;Scegliere una ricetta di un altro paese, e provare a cucinarla.
+Attività;Relax;Concedersi un massaggio, per rilassarsi.
+Attività;Cosmetica;Sistemare le unghie, in un centro specializzato.
+Attività;Cosmetica;Fare o farsi fare la piega ai capelli.
+Attività;Verde;Fare una passeggiata nella natura, ascoltando musica.
+Attività;Hobby;Prendere in prestito un libro, in biblioteca.
+Attività;Relax;Riordinare casa, o una zona specifica come stanza, scrivania o armadio.
+Attività;Hobby;Creare qualcosa con le proprie mani, come puzzle, uncinetto, calligrafia, ceramica, ferri o perline.
