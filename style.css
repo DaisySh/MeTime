@@ -76,7 +76,7 @@ h1 {
 .card-type {
     display: inline-block;
     padding: 8px 16px;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 0.85em;
     font-weight: bold;
     text-transform: uppercase;
@@ -192,7 +192,7 @@ footer h2 {
 }
 
 .instructions-list li {
-    padding: 12px 0;
+    padding: 5px 0;
     padding-left: 35px;
     position: relative;
 }
@@ -205,10 +205,6 @@ footer h2 {
 }
 
 .highlight {
-    background: linear-gradient(120deg, #ffd93d 0%, #ff6b6b 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
 
