@@ -41,5 +41,6 @@ const typeIcons = {
 
 
 ## TO-DO
+- add licence CC-by
 - add english 
 - add hamburger for CSV upload
