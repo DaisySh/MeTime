@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Casuali</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fatti Ispirare da Queste Attività</h1>
+    <p class="subtitle">Clicca su una card per pescarne una nuova!</p>
+
+    <div class="container" id="cardContainer"></div>
+
+    <footer>
+        <h2>📋 Come Funziona</h2>
+        <p class="instructions">
+            Questa applicazione ti presenta <span class="highlight">3 card casuali</span> pescate dal mazzo di attività.
+            Perfetta per brainstorming, attività di team building o decisioni creative!
+        </p>
+        <ul class="instructions-list">
+            <li><strong>Le card vengono caricate automaticamente</strong> da un file esterno predefinito</li>
+            <li><strong>Clicca su una card</strong> per pescarne una nuova dal mazzo in modo casuale</li>
+            <li><strong>Usa le card</strong> come spunti per discussioni, compiti o attività creative</li>
+            <li><strong>Salva uno screenshot</strong> per condividere la configurazione con il tuo team</li>
+            <li><strong>Ricarica la pagina</strong> per ottenere una nuova combinazione casuale iniziale</li>
+        </ul>
+        <p class="instructions" style="margin-top: 20px; text-align: center; font-style: italic;">
+            💡 Ogni volta che apri l'app, le card iniziali saranno diverse!
+        </p>
+        <div class="signature">Daisy@2026</div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script>
+        let allCards = [];
+        let currentCards = [null, null, null];
+
+        // Dati di esempio se non viene caricato un CSV
+        const defaultData = [
+            { tipo: 'idea', titolo: 'Brainstorming', descrizione: 'Organizza una sessione di brainstorming per nuove funzionalità del prodotto' },
+            { tipo: 'task', titolo: 'Revisione Codice', descrizione: 'Completa la revisione del codice per il nuovo modulo di autenticazione' },
+            { tipo: 'quote', titolo: 'Citazione Ispirazionale', descrizione: '"Il futuro appartiene a coloro che credono nella bellezza dei propri sogni" - Eleanor Roosevelt' },
+            { tipo: 'tip', titolo: 'Consiglio del Giorno', descrizione: 'Fai una pausa ogni 50 minuti per migliorare la concentrazione e la produttività' },
+            { tipo: 'challenge', titolo: 'Sfida Settimanale', descrizione: 'Impara una nuova tecnica di programmazione e applicala in un piccolo progetto' },
+            { tipo: 'idea', titolo: 'Innovazione', descrizione: 'Esplora come l\'intelligenza artificiale può migliorare l\'esperienza utente' },
+            { tipo: 'task', titolo: 'Documentazione', descrizione: 'Aggiorna la documentazione API con gli ultimi endpoint sviluppati' },
+            { tipo: 'quote', titolo: 'Motivazione', descrizione: '"La qualità non è un atto, è un\'abitudine" - Aristotele' },
+            { tipo: 'tip', titolo: 'Best Practice', descrizione: 'Utilizza il versionamento semantico per gestire meglio le release' },
+            { tipo: 'challenge', titolo: 'Ottimizzazione', descrizione: 'Riduci il tempo di caricamento della pagina principale del 30%' }
+        ];
+
+        const typeIcons = {
+            idea: '💡',
+            task: '✅',
+            quote: '💬',
+            tip: '🎯',
+            challenge: '🏆'
+        };
+
+        // Funzione di seed per il generatore random basato sul timestamp
+        let seed = Date.now();
+
+        function seededRandom() {
+            seed = (seed * 9301 + 49297) % 233280;
+            return seed / 233280;
+        }
+
+        function getRandomCard(excludeIndex = -1) {
+            if (allCards.length === 0) return null;
+
+            // Conta i tipi già presenti nelle card correnti
+            const typeCount = {};
+            currentCards.forEach(card => {
+                if (card && card.tipo) {
+                    const tipo = card.tipo.toLowerCase();
+                    typeCount[tipo] = (typeCount[tipo] || 0) + 1;
+                }
+            });
+
+            // Filtra le card che possono essere pescate (massimo 2 dello stesso tipo)
+            const availableCards = allCards.filter((card, index) => {
+                if (index === excludeIndex) return false;
+                const tipo = card.tipo.toLowerCase();
+                return (typeCount[tipo] || 0) < 2;
+            });
+
+            // Se non ci sono card disponibili con il vincolo, permetti qualsiasi card
+            const cardsToUse = availableCards.length > 0 ? availableCards : allCards.filter((_, index) => index !== excludeIndex);
+
+            if (cardsToUse.length === 0) return null;
+
+            const randomIndex = Math.floor(seededRandom() * cardsToUse.length);
+            const selectedCard = cardsToUse[randomIndex];
+            const originalIndex = allCards.indexOf(selectedCard);
+
+            return { ...selectedCard, originalIndex };
+        }
+
+
+        function createCardElement(cardData, index) {
+            if (!cardData) return '';
+
+            const tipo = cardData.tipo.toLowerCase();
+            const icon = typeIcons[tipo] || '📌';
+
+            return `
+                <div class="card type-${tipo} flip" onclick="refreshCard(${index})" data-index="${index}">
+                    <span class="card-type">${tipo}</span>
+                    <h2 class="card-title">${cardData.titolo}</h2>
+                    <p class="card-description">${cardData.descrizione}</p>
+                    <div class="card-icon">${icon}</div>
+                </div>
+            `;
+        }
+
+        function refreshCard(index) {
+            const newCard = getRandomCard(currentCards[index]?.originalIndex);
+            if (!newCard) return;
+
+            currentCards[index] = newCard;
+
+            const container = document.getElementById('cardContainer');
+            const cardElements = container.children;
+
+            if (cardElements[index]) {
+                cardElements[index].outerHTML = createCardElement(newCard, index);
+            }
+        }
+
+        function initializeCards() {
+            if (allCards.length === 0) return;
+
+            for (let i = 0; i < 3; i++) {
+                currentCards[i] = getRandomCard();
+            }
+
+            const container = document.getElementById('cardContainer');
+            container.innerHTML = currentCards.map((card, index) => createCardElement(card, index)).join('');
+        }
+
+
+        // Funzione per caricare il CSV esterno
+        async function loadExternalCSV() {
+            try {
+                const response = await fetch('cards.csv');
+
+                if (!response.ok) {
+                    throw new Error('File non trovato');
+                }
+
+                const csvText = await response.text();
+
+                Papa.parse(csvText, {
+                    header: true,
+                    skipEmptyLines: true,
+                    complete: function(results) {
+                        allCards = results.data.filter(row => row.tipo && row.titolo && row.descrizione);
+
+                        if (allCards.length > 0) {
+                            console.log(`✓ ${allCards.length} card caricate da cards.csv`);
+                            initializeCards();
+                        } else {
+                            console.warn('Il CSV non contiene dati validi, uso i dati di esempio');
+                            allCards = defaultData;
+                            initializeCards();
+                        }
+                    },
+                    error: function(error) {
+                        console.error('Errore nel parsing del CSV:', error);
+                        allCards = defaultData;
+                        initializeCards();
+                    }
+                });
+            } catch (error) {
+                console.warn('File cards.csv non trovato, uso i dati di esempio');
+                allCards = defaultData;
+                initializeCards();
+            }
+        }
+        // Carica le card all'avvio
+        loadExternalCSV();
+
+        document.getElementById('csvFile').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            Papa.parse(file, {
+                header: true,
+                skipEmptyLines: true,
+                complete: function(results) {
+                    allCards = results.data.filter(row => row.tipo && row.titolo && row.descrizione);
+
+                    if (allCards.length > 0) {
+                        initializeCards();
+                        document.querySelector('.file-info').textContent = `✓ ${allCards.length} card caricate dal file`;
+                    } else {
+                        alert('Il CSV non contiene dati validi. Assicurati che abbia le colonne: tipo, titolo, descrizione');
+                    }
+                },
+                error: function(error) {
+                    console.error('Errore nel parsing del CSV:', error);
+                    alert('Errore nella lettura del file CSV');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
